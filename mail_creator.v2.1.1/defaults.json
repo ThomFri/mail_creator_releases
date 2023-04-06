@@ -1,0 +1,22 @@
+{
+        "fix_bad_html_in_template": true,
+        "simplify_colnames": true,
+        "save": {
+            "filebasename": "{basename}",
+            "save_converted": false,
+            "save_rendered": false,
+            "save_drafts": false
+        },
+        "imap": {
+            "server": "email.uni-passau.de",
+            "folder": "Entwürfe",
+            "do_upload": true
+        },
+        "converters": {
+            "Themennummer": "str",
+            "Matr.Nr.": "int",
+            "Matrikelnummer": "int",
+            "Matrnr.": "int",
+            "Matrikelnr": "int"
+        }
+    }
