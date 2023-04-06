@@ -1,0 +1,177 @@
+{
+  "enter_to_quit": true,
+  "template_options": {
+    "cook-n-run": {
+      "parse_phonenumbers": 0,
+      "inputs": {
+        "participants": {
+          "name": "Teilnehmer",
+          "type": 0,
+          "type_": "0 = all_info_in_row, 1 = info_in_multiple_cols, 2 = info_in_multiple_cols_and_grouping",
+          "required_columns": {
+            "uid": {
+              "name": "UID",
+              "desc": "ID der Teilnehmer",
+              "default": [
+                "uid",
+                "id"
+              ]
+            },
+            "nachname": {
+              "name": "Nachname",
+              "desc": "Nachname der Teilnehmer",
+              "default": [
+                "Name",
+                "Nachname"
+              ]
+            },
+            "vorname": {
+              "name": "Vorname",
+              "desc": "Vorname der Teilnehmer",
+              "default": [
+                "Vorname"
+              ]
+            },
+            "geschlecht": {
+              "name": "Geschlecht",
+              "desc": "Geschlecht oder Anrede der Teilnehmer",
+              "default": [
+                "Geschlecht",
+                "Anrede"
+              ]
+            },
+            "email": {
+              "name": "E-Mail",
+              "desc": "E-Mail-Adresse der Teilnehmer",
+              "default": [
+                "E-Mail",
+                "EMail",
+                "Mail"
+              ]
+            },
+            "telefonnummer": {
+              "name": "Telefonnummer",
+              "desc": "Telefonnummer der Teilnehmer",
+              "default": [
+                "Telefonnummer",
+                "Mobilnummer",
+                "Telefon",
+                "Tel",
+                "Tel."
+              ],
+              "format": "str"
+            },
+            "allergien": {
+              "name": "Allergien und Unverträglichkeiten",
+              "desc": "Allergien und Unverträglichkeiten der Teilnehmer",
+              "default": [
+                "Allergie",
+                "Allergien",
+                "Falls du Allergien und Unverträglichkeiten hast, trage diese bitte im folgenden Textfeld ein:",
+                "Unverträglichkeiten"
+              ]
+            },
+            "kochmoeglichkeit": {
+              "name": "Kochmöglichkeit",
+              "desc": "Ob der Teilnehmer eine Kochmöglichkeit hat",
+              "default": [
+                "Hast du die räumlichen Möglichkeiten, bei dir zu Hause für sechs Personen zu kochen?",
+                "Kochmöglichkeit"
+              ]
+            },
+            "kochen_bei": {
+              "name": "Kochen bei",
+              "desc": "Bei welchem Teilnehmer tatsächlich gekocht wird",
+              "default": [
+                "Kochen bei"
+              ],
+              "skippable": true
+            }
+          }
+        },
+        "teams": {
+          "name": "Teams",
+          "required_columns": {
+            "team": {
+              "name": "Team(nummer)",
+              "desc": "Das Team, zu dem Teilnehmer zugeordnet sind",
+              "default": [
+                "Team",
+                "TEAM",
+                "Teamnummer"
+              ]
+            },
+            "uid": {
+              "name": "UID",
+              "desc": "ID der Teilnehmer",
+              "default": [
+                "uid",
+                "id",
+                "Name 1",
+                "Name 1 ",
+                "Name 2",
+                "Name 2 ",
+                "Name 3",
+                "Name 3 "
+              ]
+            },
+            "kochen_bei": {
+              "name": "Kochen bei",
+              "desc": "Bei welchem Teilnehmer tatsächlich gekocht wird",
+              "default": [
+                "Kochen bei"
+              ],
+              "skippable": true
+            }
+          }
+        },
+        "meals": {
+          "name": "Gerichte",
+          "required_columns": {
+            "team": {
+              "name": "Team(nummer)",
+              "desc": "Das Team, zu dem Teilnehmer zugeordnet sind",
+              "default": [
+                "Team",
+                "TEAM",
+                "Teamnummer"
+              ]
+            },
+            "gang": {
+              "name": "Gang",
+              "desc": "Der Gang, den das Team zubereitet",
+              "default": [
+                "Gang",
+                "Gericht"
+              ]
+            }
+          }
+        },
+        "rounds": {
+          "name": "Runden",
+          "required_columns": {
+            "team": {
+              "name": "Team(nummer)",
+              "desc": "Das Team, zu dem Teilnehmer zugeordnet sind",
+              "default": [
+                "Team",
+                "TEAM",
+                "Teamnummer"
+              ]
+            },
+            "round": {
+              "name": "Runde",
+              "desc": "Die einzelnen Runden, also welches Team wo ist",
+              "default": [
+                "Runden",
+                "Runde 1",
+                "Runde 2",
+                "Runde 3"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
